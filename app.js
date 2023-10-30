@@ -1,17 +1,10 @@
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
-const server = http.createServer((req,res)=>{
-    res.statusCode = 200;
-    res.setHeader('Content-Type','text/plain');
-    res.end("hello");
-})
-server.listen(port,hostname,()=> {
-    console.log(`running at http://${hostname}:${port}/`)
-})
+// const sum  = require('./add');
+// console.log("hello world");
+// add = sum(1,2);
+// add2 = sum(3,5);
+// console.log(add2);
+// console.log(add);
 
-// const http = require('http')
-// const server = http.createServer((req,res)=> {
-//     res.writeHead(200,{'Content-Type':'text/plain'})
-//     res.end("hello world")
-// }).listen(8080);
+require('./batman');
+require('./superman');
+
